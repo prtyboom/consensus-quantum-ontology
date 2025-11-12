@@ -1,0 +1,249 @@
+\section{Слабополевой предел и оптические эффекты}
+
+\subsection{Параметризованная пост-ньютоновская метрика}
+
+Для связи нашего скалярного поля $\varepsilon(x)$ с общей теорией относительности мы используем стандартный формализм параметризованной пост-ньютоновской (PPN) метрики \cite{Will2014}. Это позволяет избежать эвристических конструкций (типа «эффективного показателя преломления») и опереться на проверенный релятивистский аппарат.
+
+\subsubsection{PPN-формализм в слабом поле}
+
+В слабом гравитационном поле ($|GM/(c^2r)| \ll 1$) метрику пространства-времени можно записать в виде:
+\begin{equation}\label{eq:ppn_metric}
+\begin{cases}
+g_{00} = -(1 + 2\Phi/c^2 + \mathcal{O}(\Phi^2/c^4)) \\[0.2cm]
+g_{ij} = (1 - 2\gamma\Phi/c^2)\delta_{ij} + \mathcal{O}(\Phi^2/c^4) \\[0.2cm]
+g_{0i} = \mathcal{O}(v/c) \quad \text{(пренебрегаем)}
+\end{cases}
+\end{equation}
+
+где:
+\begin{itemize}
+    \item $\Phi(x)$ — ньютоновский гравитационный потенциал
+    \item $\gamma$ — PPN-параметр (для ОТО $\gamma = 1$)
+    \item $\delta_{ij}$ — метрика плоского пространства
+\end{itemize}
+
+В нашем фреймворке:
+\begin{equation}\label{eq:phi_epsilon_reminder}
+\Phi = -c^2(1 - \varepsilon) = -c^2\delta
+\end{equation}
+
+где $\delta = 1 - \varepsilon$ — отклонение от Абсолюта.
+
+\subsubsection{Выбор параметра $\gamma$}
+
+Мы принимаем \textbf{$\gamma = 1$} (значение ОТО), что согласуется с экспериментальными ограничениями \cite{Bertotti2003}:
+\begin{equation}
+|\gamma - 1| < 2.3 \times 10^{-5} \quad \text{(Cassini, 2003)}
+\end{equation}
+
+При $\gamma = 1$ метрика~\eqref{eq:ppn_metric} принимает вид:
+\begin{equation}\label{eq:ppn_gamma1}
+ds^2 = -\left(1 + \frac{2\Phi}{c^2}\right)c^2dt^2 + \left(1 - \frac{2\Phi}{c^2}\right)(dx^2 + dy^2 + dz^2)
+\end{equation}
+
+Подставляя $\Phi = -c^2(1-\varepsilon)$:
+\begin{equation}
+ds^2 = -(2\varepsilon - 1)c^2dt^2 + (2 - \varepsilon)(dx^2 + dy^2 + dz^2) + \mathcal{O}(\delta^2)
+\end{equation}
+
+\begin{remark}
+Мы \textbf{не} вводим «эффективный показатель преломления» $n = 2 - \varepsilon$, как в некоторых эвристических подходах. Вместо этого используем метрику~\eqref{eq:ppn_gamma1} и стандартные формулы геодезического движения и распространения света.
+\end{remark}
+
+\subsection{Гравитационное линзирование}
+
+\subsubsection{Вывод угла отклонения}
+
+Рассмотрим световой луч, проходящий на прицельном расстоянии $b$ от точечной массы $M$. Используем геодезическое уравнение для нулевых геодезических ($ds^2 = 0$).
+
+В слабом поле угол отклонения определяется интегралом вдоль невозмущённой траектории \cite{Weinberg1972}:
+\begin{equation}
+\theta = -\frac{2}{c^2}\int_{-\infty}^{+\infty} \frac{\partial\Phi}{\partial r_\perp} dl
+\end{equation}
+
+где $r_\perp$ — расстояние от массы до точки на траектории, $l$ — параметр вдоль прямой.
+
+Для точечной массы $\Phi(r) = -GM/r$:
+\begin{equation}
+\frac{\partial\Phi}{\partial r_\perp} = -\frac{GM}{r^2} \cdot \frac{b}{r} = -\frac{GMb}{r^3}
+\end{equation}
+
+где $r = \sqrt{l^2 + b^2}$. Интегрируя по $l$:
+\begin{equation}
+\theta = \frac{2GM}{c^2b} \int_{-\infty}^{+\infty} \frac{dl}{(l^2 + b^2)^{3/2}}
+\end{equation}
+
+Стандартный интеграл:
+\begin{equation}
+\int_{-\infty}^{+\infty} \frac{dl}{(l^2 + b^2)^{3/2}} = \frac{2}{b^2}
+\end{equation}
+
+откуда:
+\begin{equation}\label{eq:deflection_angle}
+\boxed{\theta = \frac{4GM}{c^2b}}
+\end{equation}
+
+\subsubsection{Выражение через поле $\varepsilon$}
+
+Из $\Phi = -c^2(1-\varepsilon)$ следует:
+\begin{equation}
+\nabla\Phi = c^2\nabla\varepsilon
+\end{equation}
+
+Формула линзирования~\eqref{eq:deflection_angle} может быть переписана:
+\begin{equation}
+\theta = -\frac{2}{c^2}\int \frac{\partial\Phi}{\partial r_\perp} dl = 2\int \frac{\partial\varepsilon}{\partial r_\perp} dl
+\end{equation}
+
+Для точечной массы $\varepsilon(r) = 1 - GM/(c^2r)$:
+\begin{equation}
+\frac{\partial\varepsilon}{\partial r_\perp} = \frac{GM}{c^2} \cdot \frac{b}{r^3}
+\end{equation}
+
+что воспроизводит~\eqref{eq:deflection_angle}.
+
+\subsubsection{Экспериментальная проверка}
+
+\begin{enumerate}
+    \item \textbf{Эддингтон, 1919} \cite{Dyson1920}: Отклонение света Солнца, $M = M_\odot$, $b = R_\odot$:
+    \begin{equation}
+    \theta_\odot = \frac{4GM_\odot}{c^2 R_\odot} = 1.75'' \quad \text{(измерено: } 1.98'' \pm 0.16''\text{)}
+    \end{equation}
+    
+    \item \textbf{VLBI, 1995–2024} \cite{Fomalont2009}: Радиоинтерферометрия со сверхдлинными базами:
+    \begin{equation}
+    \theta_{\text{измер}}/\theta_{\text{ОТО}} = 0.99992 \pm 0.00014 \quad \text{(точность 0.01\%)}
+    \end{equation}
+    
+    \item \textbf{Гравитационные линзы}: Кольца Эйнштейна, дуги, множественные изображения — тысячи примеров (HST, JWST).
+\end{enumerate}
+
+Наш фреймворк с $\varepsilon$-полем воспроизводит эти результаты точно.
+
+\subsection{Задержка Шапиро}
+
+\subsubsection{Вывод временной задержки}
+
+Рассмотрим распространение света (радиосигнала) между двумя точками на расстояниях $r_1$ и $r_2$ от массы $M$ с прицельным параметром $b$.
+
+Из метрики~\eqref{eq:ppn_gamma1} при $ds^2 = 0$:
+\begin{equation}
+c^2dt^2 = \frac{1 - 2\Phi/c^2}{1 + 2\Phi/c^2} dl^2 \approx \left(1 - \frac{4\Phi}{c^2}\right) dl^2
+\end{equation}
+
+где $dl$ — пространственный элемент. Эффективная скорость света:
+\begin{equation}
+v_{\text{eff}} = \frac{dl}{dt} \approx c\left(1 + \frac{2\Phi}{c^2}\right) = c\left(1 - 2(1-\varepsilon)\right) = c(2\varepsilon - 1)
+\end{equation}
+
+Задержка относительно плоского пространства:
+\begin{equation}
+\Delta t = \int \left(\frac{1}{v_{\text{eff}}} - \frac{1}{c}\right) dl = -\frac{2}{c^2}\int \Phi(l) \, dl
+\end{equation}
+
+Для точечной массы $\Phi(r) = -GM/r$, где $r = \sqrt{l^2 + b^2}$:
+\begin{equation}
+\Delta t = \frac{2GM}{c^3} \int_{-L}^{+L} \frac{dl}{\sqrt{l^2 + b^2}}
+\end{equation}
+
+Интегрируя:
+\begin{equation}
+\int \frac{dl}{\sqrt{l^2 + b^2}} = \ln\left(l + \sqrt{l^2 + b^2}\right) + \text{const}
+\end{equation}
+
+В пределе $L \gg b$ (лучи от Земли до космического аппарата, проходящие около Солнца):
+\begin{equation}\label{eq:shapiro_delay}
+\boxed{\Delta t = \frac{4GM}{c^3} \ln\frac{4r_1 r_2}{b^2}}
+\end{equation}
+
+\subsubsection{Экспериментальная проверка}
+
+\begin{enumerate}
+    \item \textbf{Cassini, 2003} \cite{Bertotti2003}: Радиосигнал Земля–Кассини около Солнца:
+    \begin{equation}
+    \Delta t_{\text{измер}}/\Delta t_{\text{ОТО}} = 1.00001 \pm 0.00001 \quad \text{(точность 0.001\%)}
+    \end{equation}
+    
+    \item \textbf{Двойные пульсары} \cite{Kramer2006}: PSR J0737–3039, точность до микросекунд.
+\end{enumerate}
+
+\subsection{Гравитационное красное смещение}
+
+\subsubsection{Вывод из метрики}
+
+Для фотона, испущенного в точке с потенциалом $\Phi_1$ и принятого в точке $\Phi_2$, сохранение энергии на геодезической даёт:
+\begin{equation}
+\frac{E_1}{\sqrt{|g_{00}(r_1)|}} = \frac{E_2}{\sqrt{|g_{00}(r_2)|}}
+\end{equation}
+
+Из метрики~\eqref{eq:ppn_gamma1}: $g_{00} = -(1 + 2\Phi/c^2)$, откуда:
+\begin{equation}
+\frac{\omega_1}{\omega_2} = \sqrt{\frac{1 + 2\Phi_2/c^2}{1 + 2\Phi_1/c^2}} \approx 1 + \frac{\Phi_2 - \Phi_1}{c^2}
+\end{equation}
+
+Для фотона, выходящего из гравитационного колодца ($\Phi_1 < 0$, $\Phi_2 = 0$):
+\begin{equation}
+\frac{\Delta\omega}{\omega} = \frac{\Phi_1}{c^2} = -(1 - \varepsilon_1)
+\end{equation}
+
+или
+\begin{equation}\label{eq:redshift}
+\boxed{\frac{\omega(\infty)}{\omega(r)} = \varepsilon(r) = 1 - \frac{GM}{c^2r}}
+\end{equation}
+
+\subsubsection{Экспериментальная проверка}
+
+\begin{enumerate}
+    \item \textbf{Паунд–Ребка, 1959} \cite{Pound1960}: Мёссбауэровское красное смещение в башне высотой $h = 22.5$ м:
+    \begin{equation}
+    \frac{\Delta\omega}{\omega} = \frac{gh}{c^2} = 2.46 \times 10^{-15} \quad \text{(точность 10\%)}
+    \end{equation}
+    
+    \item \textbf{Gravity Probe A, 1976} \cite{Vessot1980}: Ракетный эксперимент на высоте 10,000 км:
+    \begin{equation}
+    \Delta\omega/\omega \text{ измерено с точностью } 7 \times 10^{-5}
+    \end{equation}
+    
+    \item \textbf{GPS} \cite{Ashby2003}: Спутники на высоте 20,200 км испытывают сдвиг $\sim 45$ мкс/день, который полностью учитывается в системе.
+\end{enumerate}
+
+Все результаты согласуются с формулой~\eqref{eq:redshift}.
+
+\subsection{Почему не показатель преломления}
+
+Некоторые эвристические подходы вводят «эффективный показатель преломления гравитационного поля» $n = 2 - \varepsilon$. Мы избегаем этой конструкции по следующим причинам:
+
+\begin{enumerate}
+    \item \textbf{Нестрогость}: Понятие показателя преломления применимо к волнам в среде, а не к геометрии пространства-времени.
+    
+    \item \textbf{Противоречия}: Формула $n = 2 - \varepsilon$ даёт $n(\varepsilon=1) = 1$ (правильно), но $n(\varepsilon=0) = 2$, что не имеет ясного физического смысла в контексте метрики.
+    
+    \item \textbf{Избыточность}: PPN-метрика~\eqref{eq:ppn_gamma1} — стандартный, проверенный инструмент. Все оптические эффекты корректно выводятся из геодезических без дополнительных предположений.
+    
+    \item \textbf{Путаница размерностей}: Показатель преломления безразмерен, но его связь с метрикой $g_{\mu\nu}$ требует постулатов о том, какая компонента метрики соответствует $n$.
+\end{enumerate}
+
+\textbf{Вывод:} Мы используем $\varepsilon$-поле для построения метрики через $\Phi = -c^2(1-\varepsilon)$, а затем применяем стандартную ОТО для вывода наблюдаемых.
+
+\subsection{Резюме раздела}
+
+Мы показали:
+
+\begin{enumerate}
+    \item PPN-метрика с $\gamma = 1$ и $\Phi = -c^2(1-\varepsilon)$ согласуется с нашим вариационным фреймворком.
+    
+    \item Из этой метрики стандартными методами выводятся:
+    \begin{itemize}
+        \item Гравитационное линзирование: $\theta = 4GM/(c^2b)$
+        \item Задержка Шапиро: $\Delta t = (4GM/c^3)\ln(4r_1r_2/b^2)$
+        \item Красное смещение: $\omega(\infty)/\omega(r) = \varepsilon(r)$
+    \end{itemize}
+    
+    \item Все три эффекта проверены экспериментально с точностью от 0.001\% (Cassini) до 0.01\% (VLBI).
+    
+    \item Наш фреймворк воспроизводит их без свободных параметров и без эвристических конструкций типа $n = 2 - \varepsilon$.
+\end{enumerate}
+
+Эти результаты демонстрируют, что консенсусная онтология (разделы 2–3) не только восстанавливает ньютоновскую гравитацию, но и согласуется с релятивистскими оптическими тестами ОТО в слабом поле.
+
+В следующем разделе мы представим детальную численную валидацию уравнения Пуассона~\eqref{eq:poisson_epsilon} с тестами сходимости, изотропии и линейности.

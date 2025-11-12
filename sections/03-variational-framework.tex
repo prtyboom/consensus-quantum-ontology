@@ -1,0 +1,282 @@
+\section{Вариационный фреймворк}
+
+\subsection{Энергетический функционал}
+
+В предыдущем разделе мы установили, что материя соответствует отклонению скалярного поля $\varepsilon(x)$ от референтного значения Абсолюта $\varepsilon = 1$. Теперь мы выведем динамическое уравнение для $\varepsilon(x)$ из вариационного принципа.
+
+Ключевая идея: система стремится минимизировать отклонение от Абсолюта при наличии массы. Это формализуется через энергетический функционал.
+
+\begin{postulate}[Энергетический функционал]
+Для скалярного поля $\varepsilon(x)$ в присутствии классической плотности массы $\rho(x)$ определим функционал энергии:
+\begin{equation}\label{eq:energy_functional}
+E[\varepsilon] = \int_V \left[\frac{1}{2}|\nabla\varepsilon|^2 - \kappa\rho(x)\varepsilon(x)\right] d^3x
+\end{equation}
+
+при граничном условии $\varepsilon|_{\partial V \to \infty} = 1$ (поле стремится к Абсолюту на бесконечности).
+\end{postulate}
+
+\textbf{Физическая интерпретация членов:}
+
+\begin{enumerate}
+    \item \textbf{Градиентная энергия} $\frac{1}{2}|\nabla\varepsilon|^2$:
+    \begin{itemize}
+        \item Наказывает резкие пространственные изменения $\varepsilon(x)$
+        \item Предпочитает плавные, гладкие конфигурации
+        \item Аналог кинетической энергии в механике или энергии деформации в теории упругости
+        \item Размерность: $[\nabla\varepsilon]^2 = [1/L^2]$ (безразмерное поле, производная по длине)
+    \end{itemize}
+    
+    \item \textbf{Связь с массой} $-\kappa\rho\varepsilon$:
+    \begin{itemize}
+        \item Источник, вызывающий отклонение $\varepsilon$ от единицы
+        \item Знак «минус»: наличие массы ($\rho > 0$) выгодно при $\varepsilon < 1$
+        \item Константа $\kappa$ — размерный коэффициент связи
+        \item Размерность: $[\kappa][\rho] = [L/M][M/L^3] = [1/L^2]$ (согласовано с первым членом)
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Энергетическая интерпретация:} Первый член $\sim |\nabla\varepsilon|^2$ можно рассматривать как «цену» за неоднородность поля — за локальное нарушение симметрии Абсолюта. Второй член $\sim -\rho\varepsilon$ описывает взаимодействие этой неоднородности с материей.
+
+\begin{remark}
+Функционал~\eqref{eq:energy_functional} НЕ является действием в смысле принципа наименьшего действия классической механики (которое имело бы размерность $[ML^2/T]$). Это — \textit{энергия конфигурации}, и мы ищем её стационарные точки.
+\end{remark}
+
+\subsection{Вывод уравнения Пуассона}
+
+Мы требуем, чтобы физическая конфигурация поля $\varepsilon(x)$ соответствовала стационарной точке функционала~\eqref{eq:energy_functional}.
+
+\begin{proposition}[Эмерджентное уравнение Пуассона]
+Стационарность функционала энергии $\delta E[\varepsilon]/\delta\varepsilon = 0$ приводит к уравнению:
+\begin{equation}\label{eq:poisson_epsilon}
+\boxed{\nabla^2\varepsilon = -\kappa\rho}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Варьируем функционал~\eqref{eq:energy_functional}. Пусть $\varepsilon \to \varepsilon + \delta\varepsilon$, где $\delta\varepsilon$ — бесконечно малая вариация с условием $\delta\varepsilon|_{\partial V} = 0$ (граничное условие фиксировано).
+
+Вариация энергии:
+\begin{equation}
+\delta E = \int_V \left[\nabla\varepsilon \cdot \nabla(\delta\varepsilon) - \kappa\rho \, \delta\varepsilon\right] d^3x
+\end{equation}
+
+Интегрируем первый член по частям:
+\begin{align}
+\int_V \nabla\varepsilon \cdot \nabla(\delta\varepsilon) \, d^3x 
+&= \int_V \nabla \cdot (\delta\varepsilon \, \nabla\varepsilon) \, d^3x - \int_V \delta\varepsilon \, \nabla^2\varepsilon \, d^3x \notag\\
+&= \oint_{\partial V} \delta\varepsilon \, (\nabla\varepsilon \cdot \hat{n}) \, dA - \int_V \delta\varepsilon \, \nabla^2\varepsilon \, d^3x
+\end{align}
+
+Граничный интеграл обращается в нуль, так как $\delta\varepsilon|_{\partial V} = 0$. Таким образом:
+\begin{equation}
+\delta E = -\int_V \delta\varepsilon \left[\nabla^2\varepsilon + \kappa\rho\right] d^3x
+\end{equation}
+
+Условие стационарности $\delta E = 0$ для \textit{произвольной} вариации $\delta\varepsilon$ требует:
+\begin{equation}
+\nabla^2\varepsilon + \kappa\rho = 0 \quad \forall x \in V
+\end{equation}
+
+что и даёт уравнение~\eqref{eq:poisson_epsilon}.
+\end{proof}
+
+\textbf{Замечание о вариационном выводе:} Мы НЕ утверждаем, что уравнение Пуассона — «единственное возможное». Мы показываем, что оно \textit{следует} из естественного энергетического принципа: минимизации отклонения от Абсолюта при наличии массы. Это превращает гравитацию из постулата в следствие более фундаментальной онтологии.
+
+\subsection{Калибровка константы связи}
+
+Константа $\kappa$ в уравнении~\eqref{eq:poisson_epsilon} определяется сравнением с известной гравитационной феноменологией.
+
+\subsubsection{Идентификация гравитационного потенциала}
+
+Определим гравитационный потенциал через поле $\varepsilon$:
+\begin{equation}\label{eq:phi_definition}
+\Phi(x) \equiv -c^2(1 - \varepsilon(x)) = -c^2 \delta(x)
+\end{equation}
+
+где $\delta = 1 - \varepsilon$ — отклонение от Абсолюта, введённое в разделе 2.
+
+\textbf{Физический смысл:}
+\begin{itemize}
+    \item При $\varepsilon = 1$ (Абсолют, вакуум): $\Phi = 0$
+    \item При $\varepsilon < 1$ (материя): $\Phi < 0$ (притягивающий потенциал)
+    \item Размерность: $[\Phi] = [c^2] = L^2/T^2$ (энергия на единицу массы, как в ньютоновской гравитации)
+\end{itemize}
+
+\subsubsection{Сравнение с уравнением Пуассона для потенциала}
+
+Подставляя определение~\eqref{eq:phi_definition} в~\eqref{eq:poisson_epsilon}:
+\begin{equation}
+\nabla^2\left(1 + \frac{\Phi}{c^2}\right) = -\kappa\rho
+\end{equation}
+
+Поскольку $\nabla^2(1) = 0$:
+\begin{equation}\label{eq:poisson_phi}
+\nabla^2\Phi = -\kappa c^2 \rho
+\end{equation}
+
+Классическое ньютоновское уравнение Пуассона для гравитации:
+\begin{equation}\label{eq:poisson_newton}
+\nabla^2\Phi_{\text{Newton}} = 4\pi G \rho
+\end{equation}
+
+Требуя совпадения~\eqref{eq:poisson_phi} и~\eqref{eq:poisson_newton}, получаем:
+\begin{equation}\label{eq:kappa_calibration}
+\kappa c^2 = 4\pi G \quad \implies \quad \boxed{\kappa = \frac{4\pi G}{c^2}}
+\end{equation}
+
+\subsubsection{Численное значение}
+
+Используя фундаментальные константы:
+\begin{align}
+G &= 6.67430(15) \times 10^{-11}\,\text{м}^3\text{кг}^{-1}\text{с}^{-2} \quad \text{(CODATA 2018)} \notag\\
+c &= 299\,792\,458\,\text{м}\,\text{с}^{-1} \quad \text{(точно)}
+\end{align}
+
+получаем:
+\begin{equation}
+\kappa = \frac{4\pi \times 6.67430 \times 10^{-11}}{(2.99792458 \times 10^8)^2} \approx \boxed{9.33 \times 10^{-27}\,\text{м}\,\text{кг}^{-1}}
+\end{equation}
+
+\begin{remark}
+Это — \textbf{калибровка}, а не вывод из первых принципов. Мы фиксируем $\kappa$ так, чтобы воспроизвести известный ньютоновский предел. Вопрос о том, можно ли вывести числовое значение $G$ (а следовательно, и $\kappa$) из более глубоких информационно-теоретических соображений, остаётся открытым и является предметом будущих исследований.
+\end{remark}
+
+\subsection{Физическая интерпретация}
+
+\subsubsection{Гравитация как цена за отклонение от Абсолюта}
+
+Из определения~\eqref{eq:phi_definition}:
+\begin{equation}
+\Phi = -c^2 \delta = -c^2(1 - \varepsilon)
+\end{equation}
+
+Гравитационный потенциал — это \textit{энергетическая цена} (на единицу массы) за локальное отклонение поля от референтного состояния $\varepsilon = 1$.
+
+\textbf{Аналогия с упругостью:} Представьте резиновую мембрану, натянутую в плоскости $\varepsilon = 1$. Массивное тело «продавливает» мембрану вниз ($\varepsilon < 1$). Градиент мембраны $\nabla\varepsilon$ создаёт упругую силу, стремящуюся вернуть мембрану к плоскому состоянию. Эта сила и есть гравитация:
+\begin{equation}
+\vec{F} = -m\nabla\Phi = mc^2 \nabla\varepsilon
+\end{equation}
+
+\subsubsection{Ускорение и принцип эквивалентности}
+
+Для пробной массы $m$ в потенциале $\Phi$:
+\begin{equation}
+\vec{a} = -\nabla\Phi = c^2 \nabla\varepsilon
+\end{equation}
+
+Ускорение \textbf{не зависит} от массы $m$ — это и есть слабый принцип эквивалентности. Все тела испытывают одинаковое ускорение, потому что они одинаково реагируют на градиент поля $\varepsilon$, независимо от своего состава.
+
+\subsubsection{Связь с консенсусным полем}
+
+Возвращаясь к разделу 2, уравнение~\eqref{eq:poisson_epsilon} связывает $\varepsilon$ с классической плотностью массы $\rho$. Но в консенсусной онтологии источником является не $\rho$ напрямую, а консенсусное поле $\rho_C$:
+\begin{equation}
+\delta(x) \sim A_C(x) = \mathrm{Tr}\,\rho_C(x)
+\end{equation}
+
+Таким образом, уравнение Пуассона можно переинтерпретировать:
+\begin{equation}
+\nabla^2\varepsilon = -\kappa \, \mathrm{Tr}\,\rho_C(x)
+\end{equation}
+
+\textbf{Вывод:} Гравитация возникает как реакция пространства на \textit{коллективную квантовую плотность} — не на отдельные частицы, а на их консенсусное поле.
+
+\subsection{Размерный анализ}
+
+Проверим размерную согласованность всех формул.
+
+\subsubsection{Функционал энергии}
+
+Размерность функционала~\eqref{eq:energy_functional}:
+\begin{align}
+[E] &= \int [|\nabla\varepsilon|^2] \, [d^3x] = \left[\frac{1}{L^2}\right] \cdot [L^3] = [L] \quad \text{(не энергия!)}
+\end{align}
+
+Функционал $E[\varepsilon]$ имеет размерность длины. Чтобы получить физическую энергию, нужно домножить на энергетический масштаб, например:
+\begin{equation}
+E_{\text{physical}} = \frac{\hbar c}{\ell_P} \cdot E[\varepsilon]
+\end{equation}
+
+где $\hbar c/\ell_P$ — планковская энергетическая плотность. Однако для вывода уравнения движения множитель не важен (стационарность пропорциональна стационарности).
+
+\subsubsection{Уравнение Пуассона}
+
+\begin{equation}
+[\nabla^2\varepsilon] = \frac{[1]}{[L^2]} = [L^{-2}]
+\end{equation}
+
+\begin{equation}
+[\kappa\rho] = \frac{[L]}{[M]} \cdot \frac{[M]}{[L^3]} = [L^{-2}] \quad \checkmark
+\end{equation}
+
+Размерности согласованы.
+
+\subsubsection{Гравитационный потенциал}
+
+\begin{equation}
+[\Phi] = [c^2] = \frac{[L^2]}{[T^2]} \quad \text{(энергия на единицу массы)} \quad \checkmark
+\end{equation}
+
+\subsubsection{Константа связи}
+
+\begin{equation}
+[\kappa] = \frac{[G]}{[c^2]} = \frac{[L^3 M^{-1} T^{-2}]}{[L^2 T^{-2}]} = [L M^{-1}] \quad \checkmark
+\end{equation}
+
+\subsection{Решение для точечной массы}
+
+Для сферически-симметричной точечной массы $M$ (источник $\rho(r) = M\delta^3(r)$) уравнение~\eqref{eq:poisson_epsilon} в сферических координатах:
+\begin{equation}
+\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{d\varepsilon}{dr}\right) = -\kappa M\delta(r)
+\end{equation}
+
+При $r > 0$ (вне источника):
+\begin{equation}
+\frac{d^2\varepsilon}{dr^2} + \frac{2}{r}\frac{d\varepsilon}{dr} = 0
+\end{equation}
+
+Общее решение: $\varepsilon(r) = A + B/r$. Граничное условие $\varepsilon(r \to \infty) = 1$ даёт $A = 1$. Интегрируя уравнение в окрестности $r=0$ с учётом $\delta$-функции:
+\begin{equation}
+\lim_{\epsilon \to 0} \int_\epsilon^R 4\pi r^2 \nabla^2\varepsilon \, dr = -4\pi \kappa M
+\end{equation}
+
+Используя теорему о дивергенции:
+\begin{equation}
+4\pi R^2 \frac{d\varepsilon}{dr}\bigg|_R = -4\pi\kappa M
+\end{equation}
+
+откуда $B = -\kappa M/(4\pi)$. Итак:
+\begin{equation}\label{eq:epsilon_pointmass}
+\boxed{\varepsilon(r) = 1 - \frac{\kappa M}{4\pi r} = 1 - \frac{GM}{c^2 r}}
+\end{equation}
+
+Гравитационный потенциал:
+\begin{equation}
+\Phi(r) = -c^2\left(1 - \varepsilon(r)\right) = -\frac{GM}{r}
+\end{equation}
+
+Сила на пробную массу $m$:
+\begin{equation}
+F(r) = -m\frac{d\Phi}{dr} = -\frac{GMm}{r^2}
+\end{equation}
+
+Закон обратных квадратов Ньютона воспроизведён точно.
+
+\subsection{Резюме раздела}
+
+Мы показали:
+
+\begin{enumerate}
+    \item Уравнение Пуассона $\nabla^2\varepsilon = -\kappa\rho$ \textbf{выводится} из вариационного принципа (минимизация функционала энергии).
+    
+    \item Константа связи фиксируется калибровкой к ньютоновской гравитации: $\kappa = 4\pi G/c^2 \approx 9.33 \times 10^{-27}\,\text{м/кг}$.
+    
+    \item Гравитационный потенциал $\Phi = -c^2(1-\varepsilon)$ — это энергетическая цена за отклонение от Абсолюта.
+    
+    \item Закон обратных квадратов $F \propto 1/r^2$ следует автоматически из решения для точечной массы.
+    
+    \item Все размерности согласованы.
+\end{enumerate}
+
+Этот вывод превращает гравитацию из \textit{постулированного} взаимодействия в \textit{эмерджентный феномен}, возникающий из стремления системы минимизировать отклонение от состояния максимальной симметрии (Абсолюта) при наличии материи.
+
+В следующем разделе мы покажем, как эта конструкция согласуется с релятивистскими оптическими эффектами через стандартную PPN-метрику.

@@ -1,0 +1,111 @@
+\documentclass[12pt,a4paper]{article}
+
+% Пакеты
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=2.5cm}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    citecolor=blue,
+}
+
+% Теоремные окружения
+\newtheorem{postulate}{Постулат}
+\newtheorem{proposition}{Утверждение}
+\newtheorem{lemma}{Лемма}
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание}
+
+\title{\textbf{Консенсусная квантовая онтология:}\\[0.3cm]
+\textbf{эмерджентность пространства-времени}\\[0.2cm]
+\textbf{из коллективной квантовой динамики}}
+
+\author{Фёдор Капитанов\\
+Независимый исследователь, Москва, Россия\\
+\texttt{prtyboom@gmail.com}}
+
+\date{Ноябрь 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Мы предлагаем онтологический фреймворк, в котором классическая гравитация, масса и пространственно-временная геометрия возникают как эмерджентные феномены из более фундаментального уровня — коллективной квантовой динамики наблюдателей. Вводится консенсусное поле $\rho_C(x) = \sum_i m_i K_\ell(x-x_i)|\psi_i\rangle\langle\psi_i|$, представляющее взвешенную суперпозицию всех квантовых систем. Из вариационного принципа (минимизация энергетического функционала $E[\varepsilon] = \int[\frac{1}{2}|\nabla\varepsilon|^2 - \kappa\rho\varepsilon]d^3x$) выводится уравнение Пуассона $\nabla^2\varepsilon = -\kappa\rho$ с $\kappa = 4\pi G/c^2$. Идентификация гравитационного потенциала $\Phi = -c^2(1-\varepsilon)$ воспроизводит закон Ньютона и все релятивистские оптические эффекты в слабом поле. Численная валидация демонстрирует сходимость второго порядка, изотропию и линейность. Ретродикция охватывает 337 лет наблюдательных данных (1687–2024) без свободных параметров. Теория предсказывает зависимость декогеренции от гравитационного потенциала ($\gamma \propto \nabla\rho_C$) и квантование горизонтов чёрных дыр. Это — не альтернативная интерпретация ОТО, а новая парадигма, в которой квантовое первично, а геометрия эмерджентна.
+
+\vspace{0.2cm}
+\noindent\textbf{Ключевые слова:} консенсусная онтология, эмерджентная гравитация, квантовая декогеренция, голографический принцип, вариационный вывод
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% РАЗДЕЛЫ
+\input{sections/01-introduction}
+\input{sections/02-ontological-foundation}
+\input{sections/03-variational-framework}
+\input{sections/04-numerical-validation}
+\input{sections/05-retrodiction-predictions}
+\input{sections/06-discussion-conclusions}
+% ... и т.д.
+
+% БИБЛИОГРАФИЯ 
+\begin{thebibliography}{99}
+
+\bibitem{DeWitt1967}
+B. S. DeWitt, \textit{Quantum theory of gravity}, Phys. Rev. \textbf{160}, 1113 (1967).
+
+\bibitem{Polchinski1998}
+J. Polchinski, \textit{String Theory}, Cambridge University Press (1998).
+
+\bibitem{Rovelli2004}
+C. Rovelli, \textit{Quantum Gravity}, Cambridge University Press (2004).
+
+\bibitem{Ambjorn2012}
+J. Ambjørn et al., \textit{Nonperturbative quantum gravity}, Phys. Rep. \textbf{519}, 127 (2012).
+
+\bibitem{Bekenstein1973}
+J. D. Bekenstein, \textit{Black holes and entropy}, Phys. Rev. D \textbf{7}, 2333 (1973).
+
+\bibitem{Hawking1975}
+S. W. Hawking, \textit{Particle creation by black holes}, Commun. Math. Phys. \textbf{43}, 199 (1975).
+
+\bibitem{tHooft1993}
+G. 't Hooft, \textit{Dimensional reduction in quantum gravity}, arXiv:gr-qc/9310026 (1993).
+
+\bibitem{Susskind1995}
+L. Susskind, \textit{The world as a hologram}, J. Math. Phys. \textbf{36}, 6377 (1995).
+
+\bibitem{Maldacena1998}
+J. Maldacena, \textit{The large N limit of superconformal field theories}, Adv. Theor. Math. Phys. \textbf{2}, 231 (1998).
+
+\bibitem{Jacobson1995}
+T. Jacobson, \textit{Thermodynamics of spacetime}, Phys. Rev. Lett. \textbf{75}, 1260 (1995).
+
+\bibitem{Padmanabhan2010}
+T. Padmanabhan, \textit{Thermodynamical aspects of gravity}, Rep. Prog. Phys. \textbf{73}, 046901 (2010).
+
+\bibitem{Verlinde2011}
+E. P. Verlinde, \textit{On the origin of gravity and the laws of Newton}, JHEP \textbf{04}, 029 (2011).
+
+\bibitem{Verlinde2016}
+E. P. Verlinde, \textit{Emergent gravity and the dark universe}, SciPost Phys. \textbf{2}, 016 (2016).
+
+\bibitem{Kapitanov2025quantum}
+Ф. Капитанов, \textit{Квант как минимальное различие}, viXra:2511.0013 (2025).
+
+\bibitem{Kapitanov2025bh}
+Ф. Капитанов, \textit{Квантование горизонта чёрной дыры}, viXra:2511.0009 (2025).
+
+\end{thebibliography}
+
+\end{document}
