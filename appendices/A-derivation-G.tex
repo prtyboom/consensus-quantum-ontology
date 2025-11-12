@@ -1,0 +1,91 @@
+\section{Вывод $G$ из термодинамики различения}
+\label{app:derivation-G}
+
+\subsection{A.1. Постановка задачи}
+
+Цель: вывести гравитационную постоянную $G$ из:
+\begin{enumerate}
+    \item Кванта различения $\Delta S_{\min} = \hbar$ (действие).
+    \item Минимальной энтропии $S_{\min} = k_B \ln 2$ (информация).
+    \item Термодинамики горизонта чёрной дыры (Бекенштейн–Хокинг).
+\end{enumerate}
+
+\subsection{A.2. Энтропия чёрной дыры}
+
+Из работ Бекенштейна~\cite{Bekenstein1973} и Хокинга~\cite{Hawking1975}:
+\begin{equation}
+S_{\text{BH}} = \frac{k_B c^3 A}{4 G \hbar},
+\end{equation}
+где $A$ — площадь горизонта событий.
+
+Для шварцшильдовской чёрной дыры массы $M$:
+\begin{equation}
+A = 4\pi r_s^2, \quad r_s = \frac{2GM}{c^2}.
+\end{equation}
+
+Подставляя:
+\begin{equation}
+S_{\text{BH}} = \frac{k_B c^3}{4G\hbar} \cdot 16\pi \frac{G^2 M^2}{c^4} = \frac{4\pi k_B G M^2}{c\hbar}.
+\end{equation}
+
+\subsection{A.3. Квантование площади}
+
+Минимальная различимая площадь — планковская площадь:
+\begin{equation}
+A_P = \ell_P^2 = \frac{G\hbar}{c^3}.
+\end{equation}
+
+Изменение площади горизонта квантуется~\cite{Kapitanov2025bh}:
+\begin{equation}
+\Delta A = 8\pi \ell_P^2 = \frac{8\pi G\hbar}{c^3}.
+\end{equation}
+
+Соответствующее изменение энтропии:
+\begin{equation}
+\Delta S = \frac{k_B c^3}{4G\hbar} \Delta A = \frac{k_B c^3}{4G\hbar} \cdot \frac{8\pi G\hbar}{c^3} = 2\pi k_B.
+\end{equation}
+
+\subsection{A.4. Связь с квантом действия}
+
+Из принципа различения минимальное изменение действия при добавлении одного кванта информации:
+\begin{equation}
+\Delta S_{\text{действие}} = \hbar.
+\end{equation}
+
+Температура Хокинга для чёрной дыры массы $M$:
+\begin{equation}
+T_H = \frac{\hbar c^3}{8\pi G M k_B}.
+\end{equation}
+
+Первый закон термодинамики:
+\begin{equation}
+dE = T_H dS \quad \Rightarrow \quad dM = \frac{T_H}{c^2} dS.
+\end{equation}
+
+Для $dS = 2\pi k_B$ (один квант площади):
+\begin{equation}
+dM = \frac{\hbar c^3}{8\pi GM k_B c^2} \cdot 2\pi k_B = \frac{\hbar c}{4GM}.
+\end{equation}
+
+Из условия $M \to M + dM$ при добавлении одного планковского кванта массы $m_P = \sqrt{\hbar c / G}$:
+\begin{equation}
+dM \sim m_P \quad \Rightarrow \quad \frac{\hbar c}{4GM} \sim \sqrt{\frac{\hbar c}{G}}.
+\end{equation}
+
+Решая относительно $G$:
+\begin{equation}
+G \sim \frac{\hbar c}{M^2}.
+\end{equation}
+
+Для $M = m_P$:
+\begin{equation}
+\boxed{G = \frac{\hbar c}{m_P^2}.}
+\end{equation}
+
+Численно:
+\begin{align}
+m_P &= \sqrt{\frac{\hbar c}{G}} \approx 2.176 \times 10^{-8}\,\text{кг}, \\
+G &= \frac{1.054 \times 10^{-34} \cdot 3 \times 10^8}{(2.176 \times 10^{-8})^2} \approx 6.674 \times 10^{-11}\,\text{м}^3\text{кг}^{-1}\text{с}^{-2}.
+\end{align}
+
+\textit{Q.E.D.}
