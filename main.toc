@@ -1,0 +1,110 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Введение}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Проблема квантовой гравитации}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Голографический принцип и информационная онтология}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Эмерджентная гравитация: обзор подходов}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Наш подход: консенсусная квантовая онтология}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Связь с предыдущими работами автора}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Стратегия валидации}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Структура статьи}{8}{subsection.1.7}%
+\contentsline {section}{\numberline {2}Онтологический фундамент}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Фундаментальный постулат: квант различения}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Формулировка принципа}{8}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Вывод фундаментальных констант}{9}{subsubsection.2.1.2}%
+\contentsline {paragraph}{1. Гравитационная постоянная $G$}{9}{section*.2}%
+\contentsline {paragraph}{2. Масштаб сглаживания $\ell $}{10}{section*.3}%
+\contentsline {paragraph}{3. Правило Борна}{10}{section*.4}%
+\contentsline {paragraph}{4. Предпочтительный базис декогеренции}{11}{section*.5}%
+\contentsline {subsubsection}{\numberline {2.1.3}Калибровка $\kappa $ как следствие различения}{11}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Резюме}{12}{subsubsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.2}Абсолют как референтное состояние максимальной энтропии}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Субтракция как дифференциация}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Консенсусное поле: строгая формулировка}{13}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Определение со сглаживанием}{13}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Разложение на интенсивность и нормированное состояние}{14}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Связь с полем $\varepsilon $}{14}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Решение проблемы циркулярности}{15}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Постановка проблемы}{15}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Итеративная самосогласованность}{15}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Эффективная гравитационная связь}{16}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Резюме онтологии}{16}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Вариационный фреймворк}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Энергетический функционал}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Вывод уравнения Пуассона}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Калибровка константы связи}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Идентификация гравитационного потенциала}{18}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Сравнение с уравнением Пуассона для потенциала}{19}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Численное значение}{19}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Физическая интерпретация}{19}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Гравитация как цена за отклонение от Абсолюта}{19}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Ускорение и принцип эквивалентности}{20}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Связь с консенсусным полем}{20}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}Размерный анализ}{20}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Функционал энергии}{20}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Уравнение Пуассона}{20}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Гравитационный потенциал}{21}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Константа связи}{21}{subsubsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.6}Решение для точечной массы}{21}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Резюме раздела}{22}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Слабополевой предел и оптические эффекты}{22}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Параметризованная пост-ньютоновская метрика}{22}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}PPN-формализм в слабом поле}{22}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Выбор параметра $\gamma $}{23}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Гравитационное линзирование}{23}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Вывод угла отклонения}{23}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Выражение через поле $\varepsilon $}{24}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Экспериментальная проверка}{24}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Задержка Шапиро}{24}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Вывод временной задержки}{24}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Экспериментальная проверка}{25}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Гравитационное красное смещение}{25}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Вывод из метрики}{25}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Экспериментальная проверка}{25}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Почему не показатель преломления}{26}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Резюме раздела}{26}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Ретродикция и предсказания}{27}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Ретродикция: классическая гравитация (1687–2024)}{27}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Слабое поле и закон Ньютона}{27}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Релятивистские поправки}{27}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Сильное поле}{28}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Декогеренция в гравитационном поле}{28}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Базовый механизм}{28}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Предсказания}{29}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Квантование горизонтов чёрных дыр}{29}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Вывод}{29}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Связь с энтропией Бекенштейна–Хокинга}{29}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Наблюдательная проверка}{29}{subsubsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.4}Дополнительные проверяемые предсказания}{30}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Космология}{30}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Квантовая информация}{30}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Экспериментальные подписи}{30}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.5}Резюме раздела 5}{30}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Обсуждение и выводы}{31}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Онтологический статус теории}{31}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Ключевые онтологические утверждения}{31}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.2}Сравнение с общей теорией относительности}{31}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Концептуальные различия}{31}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Слабое поле: эквивалентность}{32}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Сильное поле: возможные отклонения}{32}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Сравнение с другими подходами к квантовой гравитации}{32}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Струнная теория}{32}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Петлевая квантовая гравитация (LQG)}{32}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Причинная динамическая триангуляция (CDT)}{33}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Эмерджентная гравитация Верлинде}{33}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}Философские импликации}{33}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Реализм vs инструментализм}{33}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Проблема измерения}{33}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Детерминизм и свобода воли}{33}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.4}Единство физики}{33}{subsubsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.5}Ограничения текущего формализма}{34}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Нерелятивистское приближение}{34}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Космологическая постоянная}{34}{subsubsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.3}Динамика $\ell (t)$}{34}{subsubsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.4}Причинность и нелокальность}{34}{subsubsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.6}Открытые вопросы}{34}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Выводы}{35}{subsection.6.7}%
+\contentsline {section}{\numberline {A}Вывод $G$ из термодинамики различения}{36}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}A.1. Постановка задачи}{36}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}A.2. Энтропия чёрной дыры}{36}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}A.3. Квантование площади}{37}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}A.4. Связь с квантом действия}{37}{subsection.A.4}%
